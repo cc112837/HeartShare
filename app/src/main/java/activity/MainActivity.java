@@ -11,7 +11,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.cc.heartshare.R;
-
+/**
+ * 创建人：吴聪聪
+ * 邮箱:cc112837@163.com
+ * 创建时间：2016/4/19 10:42   
+*/
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
