@@ -8,7 +8,7 @@ import com.cc.heartshare.R;
 /**
  * 创建人：吴聪聪
  * 邮箱:cc112837@163.com
- * 创建时间：2016/4/19 10:41   
+ * 创建时间：2016/4/19 11:39
 */
 public class SplashActivity extends FragmentActivity {
 
