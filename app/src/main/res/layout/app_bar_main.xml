@@ -35,7 +35,7 @@
                     android:id="@+id/iv_add"
                     android:layout_width="50dp"
                     android:padding="13dp"
-                    android:visibility="gone"
+                    android:visibility="invisible"
                     android:layout_height="50dp"
                     android:src="@mipmap/add"/>
             </LinearLayout>

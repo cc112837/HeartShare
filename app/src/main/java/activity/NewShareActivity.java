@@ -5,7 +5,11 @@ import android.content.ContentValues;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.cc.heartshare.R;
 
@@ -31,12 +35,24 @@ public class NewShareActivity extends Activity {
     private String content;
     private String tag;
     private int position;
+    private TextView tv_title;
+    private ImageView iv_back;
 
     private Intent intent;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_share);
+        LinearLayout toolbar = (LinearLayout) findViewById(R.id.toolbar);
+        tv_title=((TextView) toolbar.findViewById(R.id.tv_title));
+        iv_back=(ImageView) toolbar.findViewById(R.id.iv_back);
+        iv_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+        tv_title.setText("心愿详情");
         et_content = (EditText) findViewById(R.id.et_content);
         initDB();
         intent = getIntent();
